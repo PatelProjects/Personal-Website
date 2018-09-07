@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Contact</title>
+        <link rel= "stylesheet" type="text/css" href="../css/contact.css">
+        
+        
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://jashkenas.github.io/underscore/underscore-min.js"></script>
+        <script src="https://jashkenas.github.io/backbone/backbone-min.js"></script>
+        
+         <script> 
+           $(function(){
+            $("#headerDiv").load("../html/headerFooter.html");
+           });  
+        </script>
+        
+        
+        <script> 
+           $(function(){
+            $("#footerDiv").load("../html/footer.html");
+           });  
+        </script>
+        
+        
+
+    
+    </head>
+    
+    <body>
+       
+        <div id="headerDiv"></div>
+        
+        <div class="contact">
+            <div class="container">
+                
+                <div class= "container2" onclick="window.open('mailto:webmaster@example.com',this.target);return false;" target="_blank" >
+                    <div class= "imageContainer">
+                        <img class="test" src="../images/gmailIcon.png"> 
+                    </div>
+                    <div class= "description">
+                        <p>Send me an email!</p>
+                    </div>
+                </div>
+                
+                
+                <div class= "container2" onclick="window.open('https://github.com/PatelProjects',this.target);return false;" target="_blank">
+                    <div class= "imageContainer">
+                        <img src="../images/GitHub-Mark-64px.png"> 
+                    </div>
+                     <div class= "description">
+                        <p>Check out my GitHub!</p>
+                    </div>
+                </div>
+                
+                
+                 <div class= "container2"  onclick="window.open('https://twitter.com/abhishek____123',this.target);return false;" target="_blank">
+                    <div class= "imageContainer">
+                        <img src="../images/twitterIcon.png"> 
+                    </div>
+                     <div class= "description">
+                        <p>Follow me on twitter!</p>
+                    </div>
+                </div>
+                
+                 
+                
+                 <div class= "container2">
+                    <div class= "imageContainer">
+                        <img src="../images/LinkedInIcon.png"> 
+                    </div>
+                     <div class= "description">
+                        <p>View my LinkedIn!</p>
+                    </div>
+                </div>
+                
+            </div>
+            
+        
+        
+        
+        </div>
+        
+        <div id="footerDiv"></div>
+        
+        
+        <script type="text/javascript" src="../javascript/contact.js"></script>
+         <script type="text/javascript" src="../javascript/main.js">
+        </script>
+        <script type="text/javascript" src="../javascript/router.js"></script>
+        
+    </body>
+</html>

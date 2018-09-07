@@ -1,0 +1,142 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+header{
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 10;
+  
+}
+
+    header > a{
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        padding: 15px 30px;
+        transition: 0.4s;
+
+    }
+
+.fix{
+    display: flex;
+}
+    header > a:hover{
+        background-color: crimson;
+    }
+
+        header ul li{
+            list-style-type: none;
+            font-size: 20px;
+            float: right;
+            transition: 0.4s;
+             padding-left: 20px;
+        }
+
+
+
+
+            header ul li:hover{
+               
+            }
+    
+
+
+                header ul li a{
+                    text-decoration: none;
+                    color: white;   
+                    font-weight: bold; 
+                    display: block;
+                    padding: 15px 10px;
+                    
+                }
+
+
+  header ul li a:first-child{
+      padding-right: 2vh;
+}
+
+
+                header ul li button{
+                    width: 15px;
+        
+                    filter: invert(1);
+                    background: url("../images/downDown.png") no-repeat 0 50%;
+                    background-color: white;
+                    background-size: 100%;
+           
+                    
+                }
+
+
+                header ul li button:hover,header ul li button:focus{
+                    
+                    width: 15px;
+                    filter: none;
+                    background: url("../images/downDown.png") no-repeat 0 60%;
+                    background-color:orange;
+                    background-size: 100%;
+                    transition: 0.4s;
+                    
+            }
+
+                header ul li a:hover{
+                    transition: 0.4s;
+                    background-color: orange;
+                    filter: none;
+               
+                }
+
+.dropdown-content {
+    display: none;
+    margin-top: 53.2px;
+    position: fixed;
+    background-color: #f1f1f1;
+    width: 14.2vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 11;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 {
+    display: none;
+    margin-top: 53.2px;
+    position: fixed;
+    background-color: #f1f1f1;
+    width: 18.2vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 11;
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show{
+    display: block;
+}

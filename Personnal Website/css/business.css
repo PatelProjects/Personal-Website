@@ -1,0 +1,59 @@
+.business .first-section {
+    position: relative;
+    margin-top: 1px;
+}
+
+    .business .first-section video{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    .container{
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            color: white;
+
+
+        }
+
+            .name{
+                text-align: center;
+                display: block;
+                font-size: 8vw;
+    
+            }
+
+            .PB{
+                text-align: center;
+                font-size: 2vw;
+            }
+   .business .title2{
+       padding-top: 8vh;
+        font-size: 50px;
+        font-weight: bold;
+        padding-bottom: 5vh;
+    }
+
+    .business .title2 p{
+        padding-top: 1vh;
+    }
+.business .introduction{  
+    width: 80%;
+    margin: auto;
+}
+
+    .business .description{
+        
+        text-align: center;
+        padding-bottom: 8vh;
+       
+    }
+        .business .description p{
+            margin-bottom: 0;
+        }

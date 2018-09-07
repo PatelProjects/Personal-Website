@@ -1,0 +1,281 @@
+
+.cs .first-section {
+    position: relative;
+    margin-top: -0.5px
+}
+    
+    .cs .first-section video{
+        width: 100%;
+        height: auto;
+    }
+
+    .cs .container{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .cs .title{
+        text-align: center;
+        font-size: 8vw
+        
+    }
+    
+    .cs .sub-title{
+        text-align: center;
+        font-size: 2vw;
+    }
+
+.cs .introduction{  
+    width: 80%;
+    margin: auto;
+}
+
+    .cs .description{
+        
+        text-align: center;
+        padding-bottom: 8vh;
+       
+    }
+        .cs .description p{
+            margin-bottom: 0;
+        }
+
+    .cs .imageDescription{
+       
+    }
+
+.cs .timeline1{
+    width: 80%;
+    margin: auto;
+}
+
+hr{
+    border: solid black 1px;
+}
+   .cs .title2{
+       padding-top: 8vh;
+        font-size: 50px;
+        font-weight: bold;
+        padding-bottom: 5vh;
+    }
+
+    .cs .title2 p{
+        padding-top: 1vh;
+    }
+
+    .cs .slideshow{
+        width: 100%;
+    }
+       
+
+        .cs .slideshow .slide{
+            
+
+        }
+        
+             .cs .slideshow .slide img{
+                width: 50%;
+                float: left;
+                height: 250px;
+                 
+
+            }
+
+            .cs .slideshow .slide .imageDescription{
+                position: absolute;
+                right: 10%;
+                width: 40%;
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 15px 20px;
+                height: 250px;
+                
+
+               
+            }
+
+                .cs .slideshow .slide .imageDescription p{
+                    font-size: 1.5vw;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%); 
+                }
+
+                    .cs .slideshow .slide .imageDescription p .link{
+                        color: aqua;
+                         
+                    }
+                    .cs .slideshow .slide .imageDescription p .link:hover{
+                        filter: contrast(40%);
+                        transition: 0.3s;
+                        
+                        }
+
+            .cs .slideshow .next:before{
+                    padding: 20px;
+                    content:"\00bb"; 
+            }
+            
+           
+
+            .cs .slideshow .next{
+                background: none;
+                font-size: 30px;
+                position: relative;
+                left: 55%;
+                margin-top: 115px;
+
+            }
+
+            .cs .slideshow .next:hover{
+                background-color: black;
+                color: white;
+                transition: 0.6s;
+            }
+
+
+            .cs .slideshow .back:before{
+                padding: 20px;
+                content:"\00ab"; 
+            }
+
+            .cs .slideshow .back{
+
+                background: none;
+                font-size: 30px;
+                position: relative;
+                right: 60%;
+            }
+
+            .cs .slideshow .back:hover{
+                background-color: black;
+                color: white;
+                transition: 0.6s;
+            }
+.cs .spacer{
+    height: 100px;
+}
+
+.cs .guide{
+    height: 50px;
+    margin-top: 2vh;
+    margin-bottom: 8vh;
+}
+
+    .cs .guide .dot{
+      
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 10px 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: block;
+        float: left;
+        transition: background-color 0.6s ease;
+    }
+
+.active, .cs .guide .dot:hover {
+  background-color: #717171 !important;
+}
+
+
+
+.cs .guide .dotContainer{
+    
+    display: flex;
+    width: 100%;
+    
+}
+
+.cs .guide .dotContainer .dotContainer2{
+    padding-top: 5px;
+    margin: auto;
+}
+
+.cs .projects{
+    width: 80%;
+    margin: auto;
+}
+
+.cs .continer3 {
+    width: 40%;
+    margin: auto;
+}
+
+
+.img1{
+    height: 50vh;
+}
+
+.cs .mySlides {
+  display: none;
+}
+
+.cs .cursor {
+  cursor: pointer;
+}
+
+.cs .caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+    
+}
+
+.cs .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cs .column {
+  float: left;
+  width: 25%;
+}
+
+.cs .demo {
+  opacity: 0.6;
+}
+
+.cs .active, .demo:hover {
+  opacity: 1;
+}
+
+.container4{
+    height: 54vh;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.container4 p{
+    padding-top: 30%;
+    padding-bottom: 5%
+}
+
+.cs .link{
+    
+}
+
+.container4 img{
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.container4 img:hover{
+    filter: invert(1);
+    background-color: black;
+    border: solid black 2px;
+  
+}
+
+
+
