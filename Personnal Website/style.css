@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+header{
+    overflow: auto;
+    background-color: black;
+
+}
+
+    header > a{
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        padding: 15px 30px;
+        transition: 0.2s;
+    }
+
+    header > a:hover{
+        background-color: crimson;
+    }
+
+        header ul li{
+            list-style-type: none;
+            font-size: 20px;
+            float: right;
+            transition: 0.2s;
+        }
+
+            header ul li:hover{
+                background-color: orange;     
+            }
+    
+
+                header ul li a:after{
+                    opacity: 0;
+                    content: '\00bb';
+                    
+
+                }
+
+                header ul li a{
+                    text-decoration: none;
+                    color: white;   
+                    font-weight: bold; 
+                    display: block;
+                    padding: 15px 15px;
+                }
+
+                header ul li a:hover:after{
+                    transition: 0.5s;
+                    content: ' \00bb';
+                    opacity: 1;
+                }
+
+
+
+ 
+
+
+/*==============
+First Image
+================*/
+
+.first-section{
+    position: relative;
+}
+    .first-section img{
+        width: 100%;
+    }
+
+    .container{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: white;
+
+      
+    }
+    
+         .name{
+            text-align: center;
+            display: block;
+            font-size: 5vw;
+        }
+        
+        .name:before,.name:after{
+            
+            
+            content:"\2013\2013";
+            margin: 2vw;
+            
+
+        }
+            
+        .PB{
+            text-align: center;
+            font-size: 2vw;
+        }
+        
+ 
+
+
+
+/*============
+Introduction
+==============*/
+
+.introduction{
+    width: 100%;
+    text-align: center;
+    font-size: 2vmax;
+}
+    
+    .introduction img{
+        margin-top: 20px;
+        height: 40vmin;
+        width: 40vmin;
+        border-radius: 50%;
+    }
+    
+    .introduction p{
+        font-size: 2vmax;
+        margin: 30px 60px;
+    }
+
+        .introduction ul{
+            text-decoration: none;
+        }
+
+            .options{
+                display: inline-block;        
+            }
+
+                .options a{
+                    text-decoration: none;
+                    padding: 20px;
+                    border: solid;
+                    
+                }
+
+                .options a:hover{
+                    background-color: blueviolet;
+                    color: white;
+                    border: solid;
+                }
+
+                
+
+

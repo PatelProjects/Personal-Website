@@ -1,0 +1,22 @@
+
+.page-footer {
+	background: #f4f4f4;
+	color: #9b9b9b;
+	font-size: 1.2vw;
+	height: 8vh;
+}
+
+	.page-footer .credits{
+		float: right;
+	}
+
+.page-footer-content{
+	padding: 1em;
+}
+
+.page-footer:before{
+	content: "";
+	display: block;
+	height: 5px;
+	background: url(../images/Pattern.png) left top repeat-x;
+}

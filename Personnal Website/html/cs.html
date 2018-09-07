@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Computer Science</title>
+        <link rel= "stylesheet" type="text/css" href="../css/cs.css">
+        
+        
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://jashkenas.github.io/underscore/underscore-min.js"></script>
+        <script src="https://jashkenas.github.io/backbone/backbone-min.js"></script>
+        
+         <script> 
+           $(function(){
+            $("#headerDiv").load("../html/headerFooter.html");
+           });  
+        </script>
+        
+        
+        <script> 
+           $(function(){
+            $("#footerDiv").load("../html/footer.html");
+           });  
+        </script>
+        
+        
+
+    
+    </head>
+    
+    <body>
+        <div id="headerDiv"></div>
+        
+        <div class="cs">
+            <div class="first-section">
+                <video autoplay loop src="../images/code2.mp4"></video>
+                <div class="container">
+                    <div class="title">Computer Science</div>
+                    <div class="sub-title">My First Passion</div>
+                </div>
+            </div>
+            
+            <div class="introduction" id="intro">
+                
+                <div class="title2">Introduction<p>The roots of my passion</p></div>
+                
+                <div class="description">
+
+                    <p>
+                        My journey as a programmer began when I was introduced to Python in my grade 10 high school computer science class. It truely facinated me. I've always wondered how people  gave instruction to computers, applications and other software, and at that moment I realized that through computer science I can not only understand the answer to that at a deeper level but also have the opportunity to be among the few who create tommorrows instructions, for whatever form of technology this era leads us in. Since then, I knew computer science was the road I wanted to take. 
+                    </p>
+                </div>
+                <hr>
+                
+             
+
+            </div>
+            
+            <div class="timeline1" id="timeline">
+                <div class="title2">Programming Timeline<p>Major Programming Languages that I use Frequently</p></div>
+                
+                <div class="slideshow">
+                    <div class="slide">
+                        <img src="../images/python.png">
+                        <div class= "imageDescription">
+                            <p>I started my programming career in 2015 with python. I learnt the basics in school, such as variable declaration, iteration and basic data structures, but then I went ahead to learn more advance material on my own. Now, Python has become one of the major languages that I use in my side projects and my solutions to popular coding competitions questions and challenges. Some examples of my work include the recreation of the famous game "Connect 4" and a New York Times Web Scraper</p>
+                        </div>
+                    </div>
+                    
+                    <div class= "slide" >
+                        <img src="../images/java.jpg">
+                        
+                        <div class= "imageDescription">
+                            <p>In 2017 I was introduced to my second programming language, Java. Many things were similar to Python, and I picked them up quickly, but many things were different as well, so Java came with it's own challenges. Java is the other major language that I use in my side projects. Some examples of what I have created include a file compression/decompression algorithm and an android app that you can find on the play store <a class= "link" target="_blank" href="https://play.google.com/store/apps/details?id=com.patel.abhishek.romanconverter">here</a>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="slide">
+                        <img src="../images/web3.jpeg">
+                        <div class="imageDescription">
+                            <p>In the summer of 2018, I began to learn the languages of the web. HTML, CSS and Javascript proved to be very different languages from the others I knew at the time, but I soon found the harmony between them. I've moved on to create projects, such as this website, that include the use of various Javascript libraries such as jQuery, Backbone.js and Underscore.js. Overall, I enjoy the amount of creativity that the languages of the web offer while still demanding the logical aspect of classical programming. </p>
+                        </div>
+                    </div>
+                    
+                    <button class="next" onclick="plusDivs(1)">
+                    </button>
+                    
+                    <button class="back" onclick="plusDivs(-1)">
+                    </button>
+                    
+                </div>
+                
+                <div class="spacer">
+                </div>
+                
+                <div class="guide">
+                    <div class="dotContainer">
+                        <div class="dotContainer2">
+                          <div class="dot" onclick="currentSlide(1)"></div> 
+                          <div class="dot" onclick="currentSlide(2)"></div> 
+                          <div class="dot" onclick="currentSlide(3)"></div> 
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            
+            <div class="projects" id="projects1">
+                <div class="title2">
+                Projects
+                    <p>
+                    Over the past few years, I've worked on many projects to enhance my knowledge of the programming languages that I know
+                    </p>
+                </div>
+                
+                <div class="continer3">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img class= "img1" src="../images/connect4.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img class= "img1"  src="../images/headline-scraper.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img  class= "img1" src="../images/converter-app.png" style="width:100%">
+                    </div>
+                     <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <div class="container4">
+                            <p>See more projects on my Github Profile</p>
+                            
+                            <img onclick="window.open('https://github.com/PatelProjects',this.target);return false;" target="_blank" src="../images/GitHub-Mark-Light-64px.png">
+                        
+                        </div>
+                    </div>
+        
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="../images/connect4.png" style="width:100%" onclick="currentSlide2(1)" alt="Connect 4 with Python using the Pygame Module">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/headline-scraper.png" style="width:100%" onclick="currentSlide2(2)" alt="New York Times Headline Scraper using Python">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/converter-app.png" style="width:100%" onclick="currentSlide2(3)" alt="Roman Numeral Converter App using Java - Availible on Google Play">
+                        
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="../images/gitHubSmall.png" style="width:100%" onclick="currentSlide2(4)" alt="Click Icon Above">
+                           
+                        </div>
+                     </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        <div id="footerDiv"></div>
+        
+        <script type="text/javascript" src="../javascript/cs.js"></script>
+         <script type="text/javascript" src="../javascript/main.js">
+        </script>
+        <script type="text/javascript" src="../javascript/router.js"></script>
+        
+    </body>
+</html>

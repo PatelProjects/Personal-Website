@@ -1,0 +1,300 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+header{
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 10;
+  
+}
+
+    header > a{
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+        position: absolute;
+        font-size: 20px;
+        padding: 15px 30px;
+        transition: 0.4s;
+
+    }
+
+.fix{
+    display: flex;
+}
+    header > a:hover{
+        background-color: crimson;
+    }
+
+        header ul li{
+            list-style-type: none;
+            font-size: 20px;
+            float: right;
+            transition: 0.4s;
+             padding-left: 20px;
+        }
+
+
+
+
+            header ul li:hover{
+               
+            }
+    
+
+
+                header ul li a{
+                    text-decoration: none;
+                    color: white;   
+                    font-weight: bold; 
+                    display: block;
+                    padding: 15px 10px;
+                    
+                }
+
+
+  header ul li a:first-child{
+      padding-right: 2vh;
+}
+
+
+                header ul li button{
+                    width: 15px;
+        
+                    filter: invert(1);
+                    background: url("../images/downDown.png") no-repeat 0 50%;
+                    background-color: white;
+                    background-size: 100%;
+           
+                    
+                }
+
+
+                header ul li button:hover,header ul li button:focus{
+                    
+                    width: 15px;
+                    filter: none;
+                    background: url("../images/downDown.png") no-repeat 0 60%;
+                    background-color:orange;
+                    background-size: 100%;
+                    transition: 0.4s;
+                    
+            }
+
+                header ul li a:hover{
+                    transition: 0.4s;
+                    background-color: orange;
+                    filter: none;
+               
+                }
+
+.dropdown-content {
+    display: none;
+    margin-top: 53.2px;
+    position: fixed;
+    background-color: #f1f1f1;
+    width: 14.2vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 11;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content2 {
+    display: none;
+    margin-top: 53.2px;
+    position: fixed;
+    background-color: #f1f1f1;
+    width: 18.2vw;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 11;
+}
+
+.dropdown-content2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+
+/*==============
+First Image
+================*/
+
+.home .first-section{
+    padding-top: 52px;
+    position: relative;
+    margin-bottom: 25px;
+}
+    .home .first-section img{
+        width: 100%;
+    }
+
+    .home .container{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        color: white;
+
+      
+    }
+    
+         .home .name{
+            text-align: center;
+            display: block;
+            font-size: 5vw;
+        }
+        
+        .home .name:before, .home .name:after{
+            
+            
+            content:"\2013\2013";
+            margin: 2vw;
+            
+
+        }
+            
+        .home .PB{
+            text-align: center;
+            font-size: 2vw;
+        }
+        
+ 
+
+/*============
+Introduction
+==============*/
+
+.home .introduction{
+    width: 100%;
+    text-align: center;
+    font-size: 2vmax;
+}
+    
+    .home .introduction img{
+        margin-top: 20px;
+        height: 40vmin;
+        width: 40vmin;
+        border-radius: 50%;
+    }
+    
+    .home .introduction p{
+        font-size: 2vmax;
+        margin: 30px 60px;
+    }
+
+    .home .introduction ul{
+        text-decoration: none;
+        margin-top: 40px;
+        margin-bottom: 40px;
+}
+
+        .home .options{
+            display: inline-block; 
+
+}
+
+        .home .one a{
+            text-decoration: none;
+            padding: 20px;
+            border: solid blueviolet;
+            color: blueviolet
+}
+
+        .home .two a{
+            text-decoration: none;
+            padding: 20px;
+            border: solid crimson;
+            color: crimson;
+}
+
+        .home .one a:hover{
+            transition: 0.3s;
+            background-color: blueviolet;
+            color: white;
+            border: solid;
+}
+
+        .home .two a:hover{
+            transition: 0.3s;
+            background-color: crimson;
+            color: white;
+            border: solid;
+        }
+
+                
+
+/*=================
+Footer
+===================*/
+
+.page-footer {
+	background: #f4f4f4;
+	color: #9b9b9b;
+	font-size: 1.2vw;
+	height: 8vh;
+}
+
+	.page-footer .credits{
+		float: right;
+	}
+
+.page-footer-content{
+	padding: 1em;
+}
+
+.page-footer:before{
+	content: "";
+	display: block;
+	height: 5px;
+	background: url(../images/Pattern.png) left top repeat-x;
+}
+
+.home{
+    display: none;
+}
+
+.cs{
+    padding-top: 53px;
+    display: none;
+}
+
+.bus{
+    padding-top: 53px;
+    display: none;
+}
+
+
+.is-visible{
+    display: block;
+}
+
+
